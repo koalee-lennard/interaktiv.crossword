@@ -2,6 +2,7 @@ body {
     background-color: #232323;
     background-image: url(background-test.png);
     background-size: 1275px 2595px;
+    background-repeat: no-repeat;
   }
   
   .crossword-board-container {
@@ -20,14 +21,6 @@ body {
     padding: 0;
     margin: 0;
     z-index: 2;
-  }
-
-  .square{
-    height: 500px;
-    width: 500px;
-    z-index: 1;
-    background-color: #FFFFFF;
-    margin-top: 10px;
   }
   
   .crossword-board__item {
@@ -125,13 +118,6 @@ body {
     opacity: 1;
   }
   
-  #checkvaliditems {
-    background: #00cfa7;
-    cursor: pointer;
-    position: absolute;
-    top: 1046px;
-    left: 550px;
-  }
 
   #checkvaliditems:checked
   ~ .crossword-board-container
@@ -144,21 +130,49 @@ body {
   .crossword-board__item:invalid {
     background: #ff1160;
   }
+
+  #checkvaliditems {
+    background: #00cfa7;
+    cursor: pointer;
+    position: absolute;
+    top: 1046px;
+    left: 550px;
+    z-index: 1000;
+  }
   
   [for="checkvaliditems"] {
     padding: 10px 10px 10px 40px;
-    margin-top: 118px;
-    margin-left: 530px;
+    margin-top: 114;
+    margin-left: 535;
     display: inline-block;
     background: #008f70;
-    color: #ffffff;
+    color: #FFFFFF;
     cursor: pointer;
     font-family: PT Sans;
     font-weight: bold;
-  }
+    font-size: 20px;
+    z-index: 1000;
 
+  }
   .back-btn{
     margin-top: 1100px;
-    margin-left: 450px;
+    margin-left: 490px;
+    height: 87px ;
+    width: 268px ;
+    margin-bottom: 100px; 
   }
+
+  .pass-text{
+    color: white;
+    size: 100px;
+  }
+
+  .hide{
+    display: none;
+  }
+
+
+
+
+
   
