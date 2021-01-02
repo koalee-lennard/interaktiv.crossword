@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal 1 Wrap Up</title>
   <link href="crossword.css" rel="stylesheet">
+  <script defer src="crossword.js"></script>
 </head>
 
 <div class="crossword-board-container">
@@ -349,7 +350,8 @@
 
 </html>
 <br/>
-<input type="checkbox" name="checkvaliditems" id="checkvaliditems" />
-<label for="checkvaliditems">Check for valid squares</label>
+<input type="checkbox" name="checkvaliditems" id="checkvaliditems" onclick="validateAnswer()"/>
+<label for="checkvaliditems">Submit Answers</label>
 <br />
 <input type="image" src="back-button.png" name="back-btn" id="back-btn" class="back-btn">
+<div id="pass-text" class="pass-text hide">Pass</div>
