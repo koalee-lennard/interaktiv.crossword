@@ -1,26 +1,30 @@
 body {
     background-color: #232323;
     background-image: url(background-test.png);
-    background-size: 1275px 2595px;
+    background-size: 1920;
     background-repeat: no-repeat;
+    max-width: 1920;
+    max-height: auto;
   }
   
   .crossword-board-container {
-    position: center;
     margin-left: 270px;
-    margin-top: 400px;
+    margin-top: 600px;
+    justify-content: center;
   }
 
   .crossword-board {
     background: none;
-    width: 500px;
-    height: 500px;
+    width: 750px;
+    height: 750px;
     display: grid;
     grid-template: repeat(19, 7.6923076923%)/repeat(19, 7.6923076923%);
     list-style-type: none;
     padding: 0;
     margin: 0;
     z-index: 2;
+    margin-left: 142px;
+    margin-top: 100px;
   }
   
   .crossword-board__item {
@@ -29,7 +33,7 @@ body {
     position: relative;
     z-index: 100;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: PT Sans;
@@ -49,6 +53,8 @@ body {
   
   .crossword-board--labels {
     position: absolute;
+    margin-left: 1px;
+    margin-top: 1px;
   }
   
   .crossword-board__item-label {
@@ -132,7 +138,7 @@ body {
   }
 
   #checkvaliditems {
-    background: #00cfa7;
+    background: #008f70;
     cursor: pointer;
     position: absolute;
     top: 1046px;
@@ -142,7 +148,7 @@ body {
   
   [for="checkvaliditems"] {
     padding: 10px 10px 10px 40px;
-    margin-top: 114;
+    margin-top: 113;
     margin-left: 535;
     display: inline-block;
     background: #008f70;
@@ -155,10 +161,10 @@ body {
 
   }
   .back-btn{
-    margin-top: 1100px;
-    margin-left: 490px;
-    height: 87px ;
-    width: 268px ;
+    margin-top: 1850px;
+    margin-left: 760px;
+    height: 130px ;
+    width: 400px ;
     margin-bottom: 100px; 
   }
 
@@ -171,8 +177,20 @@ body {
     display: none;
   }
 
+  h1 {
+    font-size: 45px;
+    color: white;
+  }
 
-
-
-
-  
+  .submitbtn{
+    border: none;
+    color: #FFFFFF;
+    background: #008f70;
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    margin-top: 515px;
+    margin-left: 270px;
+  }
