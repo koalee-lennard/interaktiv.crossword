@@ -1,29 +1,80 @@
 body {
     background-color: #232323;
-    background-image: url(background-test.png);
+    background-image: url(CHARCOAL\ OVERLAY.png);
     background-size: 100vw;
     background-repeat: no-repeat;
     background-attachment: scroll;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     max-width: 100vw;
   }
   
+  .instructions{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 325px;
+    margin-top: 100px;
+  }
+
+  .rectangle{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 650px;
+    height: 550;
+    z-index: -1;
+    position: relative;
+  }
+
+  .submitbtn{
+    border: none;
+    color: #FFFFFF;
+    background-color: #8f5fde;
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000px;
+  }
+
+  .boards{
+    z-index: -1;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .back-btn{
+    width: 200px ;
+    margin-bottom: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    display: block;
+  }
+
   .crossword-board-container {
-    margin-left: 272px;
-    margin-top: 400px;
-    justify-content: center;
+    display: block;
+    margin-top: -580px;
+    margin-left: 372px;
+    margin-right: auto;
+    position: absol
   }
 
   .crossword-board {
     background: none;
-    width: 500px;
-    height: 500px;
+    width: 370;
+    height: 370;
     display: grid;
     grid-template: repeat(19, 7.6923076923%)/repeat(19, 7.6923076923%);
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     z-index: 2;
     margin-top: 100px;
     margin-right: 200px;
@@ -35,7 +86,7 @@ body {
     position: relative;
     z-index: 100;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: PT Sans;
@@ -67,9 +118,10 @@ body {
     position: absolute;
     top: 2px;
     left: 2px;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1;
     font-family: PT Sans;
+    font-weight: bold;
   }
   
   .crossword-board__item-label--1 {
@@ -142,32 +194,19 @@ body {
   #checkvaliditems {
     background: #008f70;
     cursor: pointer;
-    position: absolute;
     top: 1046px;
     left: 550px;
-    z-index: 1000;
   }
   
   [for="checkvaliditems"] {
     padding: 10px 10px 10px 40px;
-    margin-top: 113;
-    margin-left: 535;
     display: inline-block;
-    background: #008f70;
+    background: #8f5fde;
     color: #FFFFFF;
     cursor: pointer;
     font-family: PT Sans;
     font-weight: bold;
-    font-size: 20px;
-    z-index: 1000;
-
-  }
-  .back-btn{
-    margin-top: 1200px;
-    margin-left: 500px;
-    width: 300px ;
-    height: 98px ;
-    margin-bottom: 100px; 
+    font-size: 100px;
   }
 
   .pass-text{
@@ -182,15 +221,4 @@ body {
   h1 {
     font-size: 45px;
     color: white;
-  }
-
-  .submitbtn{
-    border: none;
-    color: #FFFFFF;
-    background: #008f70;
-    font-family: PT Sans;
-    font-weight: bold;
-    font-size: 25px;
-    margin-right: 25px;
-    margin-bottom: 5px;
   }
